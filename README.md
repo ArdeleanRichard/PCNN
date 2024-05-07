@@ -9,7 +9,7 @@ Python implementation of the Pulse Coupled Neural Network (PCNN) alongside multi
 
 Install:
 ```
-pip install Pulse-Coupled-Neural-Networks
+pip install pulse_coupled_nn
 ```
 
 Usage example:
