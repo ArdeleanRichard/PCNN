@@ -1,12 +1,11 @@
-import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-from flm_model import FLM
-from icm_model import ICM
-from classic_model import ClassicalPCNN
-from scm_model import SCM
-from slm_model import SLM
+from .flm_model import FLM
+from .icm_model import ICM
+from .classic_model import ClassicalPCNN
+from .scm_model import SCM
+from .slm_model import SLM
 
 
 def choose_pcnn_model(pcnn_type, input_shape, kernel_type):
@@ -25,8 +24,6 @@ def choose_pcnn_model(pcnn_type, input_shape, kernel_type):
 
 
 def run_image_segm(gamma, beta, v_theta, kernel='gaussian'):
-    # image = cv2.imread('../ip/images/fish_wall.jpg')
-    # image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
     image = np.array(
         [[230, 230, 230, 230, 115, 115, 115, 115],

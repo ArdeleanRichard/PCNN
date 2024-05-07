@@ -1,5 +1,6 @@
 import numpy as np
-from general_model import PCNNModel
+from .general_model import PCNNModel
+
 
 class SCM(PCNNModel):
     """

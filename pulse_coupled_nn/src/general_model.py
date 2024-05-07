@@ -1,10 +1,8 @@
 import numpy as np
 from scipy.signal import fftconvolve
 
-from kernels import choose_kernel
-from simulator import Simulator
-
-
+from .kernels import choose_kernel
+from .simulator import Simulator
 
 
 class PCNNModel(object):

@@ -1,27 +1,11 @@
-# PCNN
-Python implementation of the Pulse Coupled Neural Network (PCNN) alongside multiple variations:
-- Classical PCNN
-- Feature Linking Model (FLM)
-- Intersecting Cortical Model (ICM)
-- Multi Linking Model (MLM)
-- Spiking Cortical Model (SCM)
-- Sigmoidal Linking Model (SLM)
-
-Install:
-```
-pip install Pulse-Coupled-Neural-Networks
-```
-
-Usage example:
-```
 import numpy as np
 import matplotlib.pyplot as plt
 
-from pcnn import FLM
-from pcnn import ICM
-from pcnn import ClassicalPCNN
-from pcnn import SCM
-from pcnn import SLM
+from pulse_coupled_nn import FLM
+from pulse_coupled_nn import ICM
+from pulse_coupled_nn import ClassicalPCNN
+from pulse_coupled_nn import SCM
+from pulse_coupled_nn import SLM
 
 
 def run_image_segm(gamma=1, beta=2, v_theta=400, kernel_size=3, kernel='gaussian'):
@@ -49,6 +33,3 @@ def run_image_segm(gamma=1, beta=2, v_theta=400, kernel_size=3, kernel='gaussian
 
 
 run_image_segm()
-```
-
-

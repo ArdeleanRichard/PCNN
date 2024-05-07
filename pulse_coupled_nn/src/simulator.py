@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+
 class Simulator(object):
     '''Convenience class for simulating models and viewing the results.
     '''

@@ -1,10 +1,5 @@
 import numpy as np
 from astropy.convolution import RickerWavelet2DKernel
-from scipy.ndimage.filters import gaussian_filter
-
-
-import matplotlib.pyplot as plt
-
 
 
 def choose_kernel(kernel_type, size=3):
@@ -15,6 +10,7 @@ def choose_kernel(kernel_type, size=3):
     if kernel_type == 'mexican_hat':
         kernel = ricker_kernel(size=size)
         return kernel
+
 
 def gaussian_kernel(size, sigma=1.):
     """
@@ -28,4 +24,3 @@ def gaussian_kernel(size, sigma=1.):
 
 def ricker_kernel(size=3, sigma=1.):
     return RickerWavelet2DKernel(width=sigma, x_size=size, y_size=size)
-    # return RickerWavelet2DKernel(width=sigma, x_size=51, y_size=11)
