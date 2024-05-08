@@ -5,10 +5,9 @@ with open("pulse_coupled_nn/README.md", "r") as f:
 
 setup(
     name="pulse_coupled_nn",
-    version="0.0.1",
+    version="0.0.6",
     description="Python implementation of the Pulse Coupled Neural Network (PCNN)",
-    package_dir={"": "pulse_coupled_nn"},
-    packages=find_packages(where="pulse_coupled_nn"),
+    packages=find_packages(),
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/ArdeleanRichard/PCNN",
